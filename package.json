@@ -1,0 +1,21 @@
+{
+  "name": "apilivraria",
+  "version": "1.0.0",
+  "description": "APIREST de gestão de livros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pw3",
+    "nodejs",
+    "etec",
+    "barueri",
+    "3DS"
+  ],
+  "author": "CRISTIANO CORREA DE MORAES",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
