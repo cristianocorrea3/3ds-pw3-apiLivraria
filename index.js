@@ -1,8 +1,18 @@
 /* IMPORTAÇÃO DO PACOTE EXPRESS: */
 const express = require('express');
 
+/* IMPORTAÇÃO DA CONTROLLER DE CATEGORIA DE LIVROS */
+const categoriaController = require('./controller/CategoriaController');
+
 /* CRIAÇÃO DE UMA INSTANCIA EXECUTAVEL DO EXPRESS */
 const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
+/* ROTAS DE CATEGORIA DE LIVROS: */
+console.log('A REQUISIÇÃO PASSOU PELA INDEX');
+app.use('/', categoriaController);
 
 /* 
 
@@ -11,6 +21,7 @@ PARAMETROS DE ROTAS (QUALQUER VERBO):
 1 - NOME DA ROTA
 2 - CALLBACK QUE TRATA REQUISIÇÃO (req) E RESPOSTA (res)
 */
+/*
 app.get('/', (req, res)=>{
 
     console.log('ROTA RAIZ DE VERBO HTTP GET!');
@@ -23,7 +34,7 @@ app.get('/teste', (req, res)=>{
     console.log('ROTA DE TESTE DE VERBO HTTP GET!');
     res.send('ROTA DE TESTE DE VERBO HTTP GET!');
 
-});
+});*/
 
 /* 
 CRIAÇÃO DO SERVIDOR DE REQUISIÇÕES HTTP DA APLICAÇÃO 
