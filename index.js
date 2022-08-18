@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 /* ROTAS DE CATEGORIA DE LIVROS: */
-console.log('A REQUISIÇÃO PASSOU PELA INDEX');
+// console.log('A REQUISIÇÃO PASSOU PELA INDEX');
 app.use('/', categoriaController);
 
 /* 
