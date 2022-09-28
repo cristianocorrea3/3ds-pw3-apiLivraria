@@ -1,6 +1,6 @@
 /* IMPORTAÇÃO DO PACOTE EXPRESS: */
 const express = require('express');
-
+console.log('TESTE DO GITHUBDESKTOPO');
 /* IMPORTAÇÃO DA CONTROLLER DE CATEGORIA DE LIVROS */
 const categoriaController = require('./controller/CategoriaController');
 
